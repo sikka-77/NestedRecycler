@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //mlist=new ArrayList<>();
-        for(int i=0;i<200;i++){
+        for(int i=0;i<50;i++){
             if(i%2==0){
                 mlist.add(new General("Dhoni","keeper"));
             }
@@ -36,14 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
         /* Child recycler view */
 
-        for(int i=0;i<50;i++){
-            mchildlist.add(new General(R.drawable.ic_launcher_background));
-        }
+//        for(int i=0;i<50;i++){
+//            mchildlist.add(new General(R.drawable.ic_launcher_background));
+//        }
 
-        RecyclerView childRecyclerView=findViewById(R.id.child_rec);
-        childRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+       /* RecyclerView childRecyclerView=findViewById(R.id.newchild);
+        childRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1,0));
         ChildAdapter childAdapter=new ChildAdapter(this,mchildlist);
-        childRecyclerView.setAdapter(childAdapter);
+        childRecyclerView.setAdapter(childAdapter); */
 
     }
 }

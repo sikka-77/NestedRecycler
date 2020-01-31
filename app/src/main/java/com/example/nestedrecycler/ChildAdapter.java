@@ -48,7 +48,6 @@ public class ChildAdapter extends RecyclerView.Adapter<ChildAdapter.ChildHolder>
         public ChildHolder(View itemView){
             super(itemView);
             image=itemView.findViewById(R.id.childimage);
-
         }
 
     }
